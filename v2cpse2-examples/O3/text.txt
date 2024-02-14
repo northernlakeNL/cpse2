@@ -1,6 +1,0 @@
-(50,50) RECTANGLE blue (150,100)
-(50,90) CIRCLE red 30
-(50,150) LINE yellow (150,250)
-(50,300) PICTURE yuuji.png
-(600,90) CIRCLE green 70
-(50,450) RECTaNGLE white (450,500)
