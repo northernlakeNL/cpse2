@@ -1,0 +1,6 @@
+
+O3/_cpp_flags
+O3/_linker_flags
+O3/_linker_libs
+*.o
+*.exe
