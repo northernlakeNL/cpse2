@@ -1,6 +1,6 @@
 
-*/_cpp_flags
-*/_linker_flags
-*/_linker_libs
+_cpp_flags
+_linker_flags
+_linker_libs
 *.o
 *.exe
