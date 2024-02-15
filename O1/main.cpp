@@ -24,7 +24,7 @@ const square_action square_actions_P2 [] = {
 int main(){
     std::cout << "Opdracht 1 starts" << std::endl;
 
-    sf::Vector2f speed = sf::Vector2f(1.5,1.5);
+    sf::Vector2f speed = sf::Vector2f(2,2);
     sf::Event event;
     sf::RenderWindow window( sf::VideoMode(720,480), "Opdracht 1");
 
