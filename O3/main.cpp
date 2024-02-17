@@ -73,7 +73,11 @@ int main(){
 
         if( window.pollEvent(event) ){
             if (event.type == sf::Event::Closed) {
+                for (auto& line : lines){
+                    
+                }
                 window.close();
+
             }
         }
         sf::sleep(sf::milliseconds(20));
