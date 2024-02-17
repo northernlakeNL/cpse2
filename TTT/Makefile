@@ -12,7 +12,7 @@
 SOURCES := 
 
 # header files in this project
-HEADERS := 
+HEADERS := line.hpp command.hpp interact.hpp object.hpp
 
 # other places to look for files for this project
 SEARCH  := 
