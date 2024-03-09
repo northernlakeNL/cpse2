@@ -1,0 +1,27 @@
+\hypertarget{ball_8hpp_source}{}\doxysection{ball.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_BALL\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_BALL\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Object.hpp"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ball}{Ball}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object}{Object}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ size;}
+\DoxyCodeLine{00031\ \ \ \ \ sf::Color\ color;}
+\DoxyCodeLine{00032\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ sf::CircleShape\ circle;}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_ball}{Ball}}(sf::Vector2f\ pos,\ \textcolor{keywordtype}{float}\ size,\ sf::Color\ color);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_aa6abdebbe14204b0addd002d8956d9fc}{draw}}(sf::RenderWindow\&\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ \ \ \ \ sf::FloatRect\ \mbox{\hyperlink{class_ball_ad315aa3d64a1dd6e260a72ded2a50f18}{getBoundingBox}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_ball_a73bcdb38cdabdb0f154f5151e1620d9c}{getPosition}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_afe8fadc7f54da13e9a6a25b487e9df62}{updatePosition}}(sf::Vector2f\ new\_pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

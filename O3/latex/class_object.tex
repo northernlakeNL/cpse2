@@ -1,0 +1,99 @@
+\hypertarget{class_object}{}\doxysection{Object Class Reference}
+\label{class_object}\index{Object@{Object}}
+
+
+De klasse {\ttfamily \mbox{\hyperlink{class_object}{Object}}} is verantwoordelijk voor het maken van een object.  
+
+
+
+
+{\ttfamily \#include $<$object.\+hpp$>$}
+
+Inheritance diagram for Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}\label{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}} 
+{\bfseries Object} (sf\+::\+Vector2f position)
+\item 
+virtual void \mbox{\hyperlink{class_object_a944ca63a566c02245cfa0b6960842f7f}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+virtual sf\+::\+Vector2f \mbox{\hyperlink{class_object_a79ee1fe554cc805e029db3bca6221394}{get\+Position}} ()
+\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{class_object_a0326f620c3053e6536d5968255234d04}{get\+Bounding\+Box}} ()
+\item 
+virtual void \mbox{\hyperlink{class_object_a2d7ad3999d59757000f4d2f741cb9889}{update\+Position}} (sf\+::\+Vector2f new\+\_\+pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_acaeaf024e444c21a4f2e273a49829e8b}\label{class_object_acaeaf024e444c21a4f2e273a49829e8b}} 
+sf\+::\+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+De klasse {\ttfamily \mbox{\hyperlink{class_object}{Object}}} is verantwoordelijk voor het maken van een object. 
+
+De klasse {\ttfamily \mbox{\hyperlink{class_object}{Object}}} is een abstracte klasse die de basisfunctionaliteit biedt voor het maken van een object. Het heeft een constructor die een positie als invoer neemt. Ook heeft het een functie om het object te tekenen op een venster, een functie om de omtrek van het object te krijgen, een functie om de positie van het object te krijgen, en een functie om de positie van het object bij te werken.
+
+\begin{DoxyNote}{Note}
+alle andere klassen die een object maken, moeten worden afgeleid van deze klasse. 
+
+De virtuele functies in deze klasse moeten worden geïmplementeerd in de subklassen. 
+
+Alle functies in deze klasse zijn virtueel. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_a944ca63a566c02245cfa0b6960842f7f}\label{class_object_a944ca63a566c02245cfa0b6960842f7f}} 
+\index{Object@{Object}!draw@{draw}}
+\index{draw@{draw}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Object\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ball_aa6abdebbe14204b0addd002d8956d9fc}{Ball}}, \mbox{\hyperlink{class_picture_aadca6526296c83f527fc808f5070378c}{Picture}}, \mbox{\hyperlink{class_line_ad50fff453a6b534fe39b5b48178dfc27}{Line}}, and \mbox{\hyperlink{class_square_a4174b68fc1aff8f399a1a7116d0e23cd}{Square}}.
+
+\mbox{\Hypertarget{class_object_a0326f620c3053e6536d5968255234d04}\label{class_object_a0326f620c3053e6536d5968255234d04}} 
+\index{Object@{Object}!getBoundingBox@{getBoundingBox}}
+\index{getBoundingBox@{getBoundingBox}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{getBoundingBox()}{getBoundingBox()}}
+{\footnotesize\ttfamily virtual sf\+::\+Float\+Rect Object\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ball_ad315aa3d64a1dd6e260a72ded2a50f18}{Ball}}, \mbox{\hyperlink{class_picture_ac2526e64d8125aebe586be1b2e6248a6}{Picture}}, \mbox{\hyperlink{class_line_ac05c178cbc84457aa4889d908d8b8270}{Line}}, and \mbox{\hyperlink{class_square_a96ef716122f3246795822743130b5d22}{Square}}.
+
+\mbox{\Hypertarget{class_object_a79ee1fe554cc805e029db3bca6221394}\label{class_object_a79ee1fe554cc805e029db3bca6221394}} 
+\index{Object@{Object}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily virtual sf\+::\+Vector2f Object\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ball_a73bcdb38cdabdb0f154f5151e1620d9c}{Ball}}, \mbox{\hyperlink{class_picture_a12ea348f57e27d7f711ec493f0a1bc4c}{Picture}}, \mbox{\hyperlink{class_line_afa43e9c6d18041d879ad61f715d8ed0d}{Line}}, and \mbox{\hyperlink{class_square_a78c9b81a4f50aeae9471c5e3697dd375}{Square}}.
+
+\mbox{\Hypertarget{class_object_a2d7ad3999d59757000f4d2f741cb9889}\label{class_object_a2d7ad3999d59757000f4d2f741cb9889}} 
+\index{Object@{Object}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily virtual void Object\+::update\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{new\+\_\+pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ball_afe8fadc7f54da13e9a6a25b487e9df62}{Ball}}, \mbox{\hyperlink{class_picture_ae47abec45e367ba35c5252929afd5440}{Picture}}, \mbox{\hyperlink{class_line_a211df3ba170785e6e057f4484d222dee}{Line}}, and \mbox{\hyperlink{class_square_a860d53ceecba0deb1e0dc2805d14d511}{Square}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+object.\+hpp\end{DoxyCompactItemize}

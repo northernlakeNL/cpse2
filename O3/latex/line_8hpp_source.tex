@@ -1,0 +1,27 @@
+\hypertarget{line_8hpp_source}{}\doxysection{line.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LINE\_HPP\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LINE\_HPP\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}object.hpp"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_line}{Line}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object}{Object}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ sf::Vector2f\ end;}
+\DoxyCodeLine{00031\ \ \ \ \ sf::Color\ color;}
+\DoxyCodeLine{00032\ \ \ \ \ sf::VertexArray\ lines;}
+\DoxyCodeLine{00033\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_line}{Line}}(sf::Vector2f\ position,\ sf::Vector2f\ end,\ sf::Color\ color);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_ad50fff453a6b534fe39b5b48178dfc27}{draw}}(sf::RenderWindow\ \&window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ \ \ \ \ sf::FloatRect\ \mbox{\hyperlink{class_line_ac05c178cbc84457aa4889d908d8b8270}{getBoundingBox}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_line_afa43e9c6d18041d879ad61f715d8ed0d}{getPosition}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_a211df3ba170785e6e057f4484d222dee}{updatePosition}}(sf::Vector2f\ new\_pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ \_LINE\_HPP\_}}
+
+\end{DoxyCode}

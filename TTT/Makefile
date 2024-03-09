@@ -9,7 +9,7 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := 
+SOURCES := line.cpp
 
 # header files in this project
 HEADERS := line.hpp command.hpp interact.hpp object.hpp

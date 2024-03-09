@@ -9,10 +9,10 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := factory.cpp object.cpp ball.cpp square.cpp image.cpp
+SOURCES := factory.cpp ball.cpp square.cpp image.cpp line.cpp
 
 # header files in this project
-HEADERS := factory.hpp object.hpp ball.hpp square.hpp image.hpp
+HEADERS := factory.hpp object.hpp ball.hpp square.hpp image.hpp line.hpp
 
 # other places to look for files for this project
 SEARCH  := 

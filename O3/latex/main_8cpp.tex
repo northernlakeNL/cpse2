@@ -1,0 +1,84 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Object.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}factory.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{main_8cpp_aedd9ac4e070285d236573ea8e844f18d}{Vector2f\+\_\+from\+\_\+\+Vector2i}} (sf\+::\+Vector2i rhs)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+De main functie is het startpunt van het programma. Het programma maakt een venster aan en tekent objecten op het scherm. De objecten worden ingeladen vanuit een bestand en worden opgeslagen in een lijst. De objecten kunnen worden verplaatst door de muis te gebruiken.
+
+\begin{DoxyReturn}{Returns}
+De main functie geeft een integer terug, wat aangeeft of het programma succesvol is
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderWindow.php}{\texttt{ sf\+::\+Render\+Window}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Event.php}{\texttt{ sf\+::\+Event}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Mouse.php}{\texttt{ sf\+::\+Mouse}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2i}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1FloatRect.php}{\texttt{ sf\+::\+Float\+Rect}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderTarget.php\#a12417a3bcc245c41d957b29583556f39}{\texttt{ sf\+::\+Render\+Window\+::draw}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Window.php\#a338e996585faf82e93069858e3b531b7}{\texttt{ sf\+::\+Render\+Window\+::poll\+Event}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Window.php\#a99d1e3e470f3b8f8feb1c16d0059d503}{\texttt{ sf\+::\+Render\+Window\+::close}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Window.php\#a99d1e3e470f3b8f8feb1c16d0059d503}{\texttt{ sf\+::\+Render\+Window\+::is\+Open}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderTarget.php\#a6bb6f7c5d9e6c5f5f8c9a7e3c7f12a70}{\texttt{ sf\+::\+Render\+Window\+::clear}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderTarget.php\#a12417a3bcc245c41d957b29583556f39}{\texttt{ sf\+::\+Render\+Window\+::display}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/group__system.php\#ga1a257d5d3443e1a15e1c3f8c3f0ce3b4}{\texttt{ sf\+::sleep}} 
+
+\href{https://en.cppreference.com/w/cpp/language/nullptr}{\texttt{ nullptr}} 
+
+\mbox{\hyperlink{class_factory}{Factory}} 
+
+\mbox{\hyperlink{class_object}{Object}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{main_8cpp_aedd9ac4e070285d236573ea8e844f18d}\label{main_8cpp_aedd9ac4e070285d236573ea8e844f18d}} 
+\index{main.cpp@{main.cpp}!Vector2f\_from\_Vector2i@{Vector2f\_from\_Vector2i}}
+\index{Vector2f\_from\_Vector2i@{Vector2f\_from\_Vector2i}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{Vector2f\_from\_Vector2i()}{Vector2f\_from\_Vector2i()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Vector2f\+\_\+from\+\_\+\+Vector2i (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2i}]{rhs }\end{DoxyParamCaption})}
+
+De functie \textquotesingle{}Vector2f\+\_\+from\+\_\+\+Vector2i\textquotesingle{} zet een {\ttfamily sf\+::\+Vector2i} om naar een {\ttfamily sf\+::\+Vector2f} door de integer componenten naar float te casten.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & De parameter {\ttfamily rhs} is een object van type {\ttfamily sf\+::\+Vector2i}, wat een 2D vector voorstelt met integer componenten {\ttfamily x} en {\ttfamily y}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+De functie geeft een {\ttfamily sf\+::\+Vector2f} object terug, wat gemaakt is door de {\ttfamily sf\+::\+Vector2i} {\ttfamily rhs} om te zetten naar float waarden.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2i}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+\end{DoxySeeAlso}

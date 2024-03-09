@@ -1,0 +1,23 @@
+\hypertarget{object_8hpp_source}{}\doxysection{object.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_OBJECT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_OBJECT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_object}{Object}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00022\ \ \ \ \ sf::Vector2f\ position;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_object}{Object}}(sf::Vector2f\ position)\ :\ position(position)\ \{\}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ draw(sf::RenderWindow\ \&window);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ sf::Vector2f\ getPosition();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ sf::FloatRect\ getBoundingBox();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ updatePosition(sf::Vector2f\ new\_pos);}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ \_OBJECT\_HPP\_}}
+
+\end{DoxyCode}

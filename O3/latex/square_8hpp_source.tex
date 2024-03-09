@@ -1,0 +1,27 @@
+\hypertarget{square_8hpp_source}{}\doxysection{square.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_SQUARE\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_SQUARE\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Object.hpp"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_square}{Square}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object}{Object}}\ \{}
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ sf::Vector2f\ size;}
+\DoxyCodeLine{00034\ \ \ \ \ sf::Color\ color;}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ sf::RectangleShape\ rect;}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_square}{Square}}(sf::Vector2f\ pos,\ sf::Vector2f\ size,\ sf::Color\ color);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_square_a4174b68fc1aff8f399a1a7116d0e23cd}{draw}}(sf::RenderWindow\&\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \ \ \ \ sf::FloatRect\ \mbox{\hyperlink{class_square_a96ef716122f3246795822743130b5d22}{getBoundingBox}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_square_a78c9b81a4f50aeae9471c5e3697dd375}{getPosition}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_square_a860d53ceecba0deb1e0dc2805d14d511}{updatePosition}}(sf::Vector2f\ new\_pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

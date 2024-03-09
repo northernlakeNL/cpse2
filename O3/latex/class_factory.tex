@@ -1,0 +1,131 @@
+\hypertarget{class_factory}{}\doxysection{Factory Class Reference}
+\label{class_factory}\index{Factory@{Factory}}
+
+
+De klasse {\ttfamily \mbox{\hyperlink{class_factory}{Factory}}} is verantwoordelijk voor het maken van objecten van de klasse {\ttfamily \mbox{\hyperlink{class_object}{Object}}} en het extraheren van parameters voor het maken van verschillende vormen zoals Rechthoek, Lijn, Cirkel of Afbeelding. Afhankelijk van het type vorm dat is gespecificeerd in de invoerregel, maakt de functie een object van de overeenkomstige vormklasse en geeft dit terug. Als het type vorm is gespecificeerd in de invoerregel niet wordt herkend, wordt er een foutmelding afgedrukt naar {\ttfamily std\+::cerr} en wordt {\ttfamily nullptr} teruggegeven.  
+
+
+
+
+{\ttfamily \#include $<$factory.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Color \mbox{\hyperlink{class_factory_a86cb17400822ba644b9cdcde87f9fb56}{get\+Color}} (std\+::string)
+\item 
+\mbox{\hyperlink{class_object}{Object}} $\ast$ \mbox{\hyperlink{class_factory_ac480ed84315d395f3632070e2c39c8ae}{make\+Shape}} (std\+::string line)
+\item 
+std\+::string \mbox{\hyperlink{class_factory_a2c146d267958fc42d99047ad03510240}{make\+Upper}} (std\+::string link)
+\item 
+std\+::string \mbox{\hyperlink{class_factory_a5ceb91cdfcdd742e41ccfbc3dfd2f689}{get\+String}} (std\+::string line)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+De klasse {\ttfamily \mbox{\hyperlink{class_factory}{Factory}}} is verantwoordelijk voor het maken van objecten van de klasse {\ttfamily \mbox{\hyperlink{class_object}{Object}}} en het extraheren van parameters voor het maken van verschillende vormen zoals Rechthoek, Lijn, Cirkel of Afbeelding. Afhankelijk van het type vorm dat is gespecificeerd in de invoerregel, maakt de functie een object van de overeenkomstige vormklasse en geeft dit terug. Als het type vorm is gespecificeerd in de invoerregel niet wordt herkend, wordt er een foutmelding afgedrukt naar {\ttfamily std\+::cerr} en wordt {\ttfamily nullptr} teruggegeven. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_factory_a86cb17400822ba644b9cdcde87f9fb56}{Factory\+::get\+Color}} 
+
+\mbox{\hyperlink{class_factory_a2c146d267958fc42d99047ad03510240}{Factory\+::make\+Upper}} 
+
+\mbox{\hyperlink{class_factory_ac480ed84315d395f3632070e2c39c8ae}{Factory\+::make\+Shape}} 
+
+\mbox{\hyperlink{class_factory_a5ceb91cdfcdd742e41ccfbc3dfd2f689}{Factory\+::get\+String}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_factory_a86cb17400822ba644b9cdcde87f9fb56}\label{class_factory_a86cb17400822ba644b9cdcde87f9fb56}} 
+\index{Factory@{Factory}!getColor@{getColor}}
+\index{getColor@{getColor}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily sf\+::\+Color Factory\+::get\+Color (\begin{DoxyParamCaption}\item[{std\+::string}]{color }\end{DoxyParamCaption})}
+
+De functie {\ttfamily get\+Color} geeft een {\ttfamily sf\+::\+Color} object terug, gebaseerd op de input string {\ttfamily color}, of geeft een foutmelding als de kleur niet herkend wordt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & de {\ttfamily get\+Color} functie neemt een {\ttfamily std\+::string} parameter genaamd {\ttfamily color}, wat de kleurnaam voorstelt die de functie zal gebruiken om de corresponderende {\ttfamily sf\+::\+Color} object te bepalen en terug te geven.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Als de input color overeenkomt met een van de vooraf gedefinieerde kleuren (\char`\"{}\+RED\char`\"{}, \char`\"{}\+BLUE\char`\"{}, \char`\"{}\+YELLOW\char`\"{}, \char`\"{}\+GREEN\char`\"{}, \char`\"{}\+WHITE\char`\"{}), dan wordt de corresponderende {\ttfamily sf\+::\+Color} waarde teruggegeven. Als de input color niet overeenkomt met een van deze vooraf gedefinieerde kleuren, wordt er een foutmelding afgedrukt naar {\ttfamily std\+::cerr} en wordt {\ttfamily sf\+::\+Color\+::\+Transparent} teruggegeven.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+sf\+::\+Color 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_factory_a5ceb91cdfcdd742e41ccfbc3dfd2f689}\label{class_factory_a5ceb91cdfcdd742e41ccfbc3dfd2f689}} 
+\index{Factory@{Factory}!getString@{getString}}
+\index{getString@{getString}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily std\+::string Factory\+::get\+String (\begin{DoxyParamCaption}\item[{std\+::string}]{line }\end{DoxyParamCaption})}
+
+De functie {\ttfamily get\+String} in de {\ttfamily \mbox{\hyperlink{class_factory}{Factory}}} klasse analyseert een string invoer om de informatie over een vorm te extraheren en terug te geven als een nieuwe string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & De functie neemt een string {\ttfamily line} als invoer, wat een tekstregel voorstelt met informatie over een vorm die moet worden gemaakt. Er wordt verwacht dat de regel een specifieke opmaak heeft en waarden bevat die gescheiden zijn door spaties.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+De functie geeft een nieuwe string terug die de informatie over de vorm bevat, zoals het type vorm, de kleur, en de grootte. De functie analyseert de invoerregel om de nodige parameters te extraheren voor het maken van de nieuwe string. De nieuwe string bevat de informatie over de vorm, zoals het type vorm, de kleur, en de grootte, en wordt teruggegeven. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_factory_ac480ed84315d395f3632070e2c39c8ae}\label{class_factory_ac480ed84315d395f3632070e2c39c8ae}} 
+\index{Factory@{Factory}!makeShape@{makeShape}}
+\index{makeShape@{makeShape}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{makeShape()}{makeShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_object}{Object}} $\ast$ Factory\+::make\+Shape (\begin{DoxyParamCaption}\item[{std\+::string}]{line }\end{DoxyParamCaption})}
+
+De functie {\ttfamily make\+Shape} in de {\ttfamily \mbox{\hyperlink{class_factory}{Factory}}} klasse analyseert een string invoer om verschillende soorten vormen te maken op basis van de verstrekte parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & De functie neemt een string {\ttfamily line} als invoer, wat een tekstregel voorstelt met informatie over een vorm die moet worden gemaakt. Er wordt verwacht dat de regel een specifieke opmaak heeft en waarden bevat die gescheiden zijn door spaties.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+De functie geeft een dynamisch toegewezen object van een specifieke vormklasse terug op basis van de verstrekte invoerregel. De functie analyseert de invoerregel om de nodige parameters te extraheren voor het maken van verschillende vormen zoals Rechthoek, Lijn, Cirkel of Afbeelding. Afhankelijk van het type vorm dat is gespecificeerd in de invoerregel, maakt de functie een object van de overeenkomstige vormklasse en geeft dit terug. Als het type vorm is gespecificeerd in de invoerregel niet wordt herkend, wordt er een foutmelding afgedrukt naar {\ttfamily std\+::cerr} en wordt {\ttfamily nullptr} teruggegeven.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_factory_a86cb17400822ba644b9cdcde87f9fb56}{Factory\+::get\+Color}} 
+
+\mbox{\hyperlink{class_factory_a2c146d267958fc42d99047ad03510240}{Factory\+::make\+Upper}} 
+
+\mbox{\hyperlink{classsquare}{square}} 
+
+\mbox{\hyperlink{class_line}{Line}} 
+
+\mbox{\hyperlink{class_ball}{Ball}} 
+
+\mbox{\hyperlink{class_picture}{Picture}} 
+
+\mbox{\hyperlink{class_object}{Object}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Color.php}{\texttt{ sf\+::\+Color}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_factory_a2c146d267958fc42d99047ad03510240}\label{class_factory_a2c146d267958fc42d99047ad03510240}} 
+\index{Factory@{Factory}!makeUpper@{makeUpper}}
+\index{makeUpper@{makeUpper}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{makeUpper()}{makeUpper()}}
+{\footnotesize\ttfamily std\+::string Factory\+::make\+Upper (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+De functie {\ttfamily make\+Upper} in de {\ttfamily \mbox{\hyperlink{class_factory}{Factory}}} klasse zet een gegeven string om naar hoofdletters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & De functie neemt een {\ttfamily std\+::string} parameter genaamd {\ttfamily type} en zet alle karakters in de string om naar hoofdletters met behulp van {\ttfamily std\+::toupper}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+de functie geeft een nieuwe {\ttfamily std\+::string} terug waarin alle karakters in de input {\ttfamily type} string zijn omgezet naar hoofdletters met behulp van {\ttfamily std\+::toupper}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+factory.\+hpp\item 
+factory.\+cpp\end{DoxyCompactItemize}

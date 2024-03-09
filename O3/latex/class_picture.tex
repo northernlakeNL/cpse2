@@ -1,0 +1,190 @@
+\hypertarget{class_picture}{}\doxysection{Picture Class Reference}
+\label{class_picture}\index{Picture@{Picture}}
+
+
+De klasse {\ttfamily \mbox{\hyperlink{class_picture}{Picture}}} is een subklasse van de klasse {\ttfamily \mbox{\hyperlink{class_object}{Object}}} en stelt een afbeelding voor die kan worden getekend op een {\ttfamily sf\+::\+Render\+Window} venster. De klasse bevat een pad naar een afbeeldingsbestand, een {\ttfamily sf\+::\+Texture} object en een {\ttfamily sf\+::\+Sprite} object. Het heeft een constructor die een positie en een pad naar een afbeeldingsbestand verwacht. Ook heeft het een {\ttfamily draw} functie die de afbeelding tekent op een gegeven venster, een {\ttfamily get\+Bounding\+Box} functie die de begrenzende rechthoek van de afbeelding retourneert, een {\ttfamily get\+Position} functie die de positie van de afbeelding retourneert en een {\ttfamily update\+Position} functie die de positie van de afbeelding bijwerkt.  
+
+
+
+
+{\ttfamily \#include $<$image.\+hpp$>$}
+
+Inheritance diagram for Picture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_picture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_picture_a9505de45c92b24cd59ea7a50e37f49d5}{Picture}} (sf\+::\+Vector2f pos, std\+::string path)
+\item 
+void \mbox{\hyperlink{class_picture_aadca6526296c83f527fc808f5070378c}{draw}} (sf\+::\+Render\+Window \&window) override
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_picture_ac2526e64d8125aebe586be1b2e6248a6}{get\+Bounding\+Box}} () override
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_picture_a12ea348f57e27d7f711ec493f0a1bc4c}{get\+Position}} () override
+\item 
+void \mbox{\hyperlink{class_picture_ae47abec45e367ba35c5252929afd5440}{update\+Position}} (sf\+::\+Vector2f new\+\_\+pos) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}\label{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}} 
+{\bfseries Object} (sf\+::\+Vector2f position)
+\item 
+virtual void \mbox{\hyperlink{class_object_a944ca63a566c02245cfa0b6960842f7f}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+virtual sf\+::\+Vector2f \mbox{\hyperlink{class_object_a79ee1fe554cc805e029db3bca6221394}{get\+Position}} ()
+\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{class_object_a0326f620c3053e6536d5968255234d04}{get\+Bounding\+Box}} ()
+\item 
+virtual void \mbox{\hyperlink{class_object_a2d7ad3999d59757000f4d2f741cb9889}{update\+Position}} (sf\+::\+Vector2f new\+\_\+pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_acaeaf024e444c21a4f2e273a49829e8b}\label{class_object_acaeaf024e444c21a4f2e273a49829e8b}} 
+sf\+::\+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+De klasse {\ttfamily \mbox{\hyperlink{class_picture}{Picture}}} is een subklasse van de klasse {\ttfamily \mbox{\hyperlink{class_object}{Object}}} en stelt een afbeelding voor die kan worden getekend op een {\ttfamily sf\+::\+Render\+Window} venster. De klasse bevat een pad naar een afbeeldingsbestand, een {\ttfamily sf\+::\+Texture} object en een {\ttfamily sf\+::\+Sprite} object. Het heeft een constructor die een positie en een pad naar een afbeeldingsbestand verwacht. Ook heeft het een {\ttfamily draw} functie die de afbeelding tekent op een gegeven venster, een {\ttfamily get\+Bounding\+Box} functie die de begrenzende rechthoek van de afbeelding retourneert, een {\ttfamily get\+Position} functie die de positie van de afbeelding retourneert en een {\ttfamily update\+Position} functie die de positie van de afbeelding bijwerkt. 
+
+\begin{DoxyNote}{Note}
+De positie is de positie van de linkerbovenhoek van de afbeelding.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_object}{Object}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_picture_a9505de45c92b24cd59ea7a50e37f49d5}\label{class_picture_a9505de45c92b24cd59ea7a50e37f49d5}} 
+\index{Picture@{Picture}!Picture@{Picture}}
+\index{Picture@{Picture}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{Picture()}{Picture()}}
+{\footnotesize\ttfamily Picture\+::\+Picture (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+De functie {\ttfamily \mbox{\hyperlink{class_picture_a9505de45c92b24cd59ea7a50e37f49d5}{Picture\+::\+Picture}}} is een constructor voor de klasse {\ttfamily \mbox{\hyperlink{class_picture}{Picture}}} die de positie en het pad initialiseert.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & De {\ttfamily pos} parameter in de {\ttfamily \mbox{\hyperlink{class_picture}{Picture}}} constructor is van het type {\ttfamily sf\+::\+Vector2f}, wat een 2D-\/vector met floating point-\/coördinaten voorstelt. Het wordt gebruikt om de positie van het afbeeldingsobject op het scherm te specificeren. \\
+\hline
+{\em path} & De {\ttfamily path} parameter in de {\ttfamily \mbox{\hyperlink{class_picture}{Picture}}} constructor is een {\ttfamily std\+::string} die het bestandspad naar de afbeelding voorstelt die zal worden weergegeven door het {\ttfamily \mbox{\hyperlink{class_picture}{Picture}}} object. Dit pad wordt gebruikt om de afbeelding van het bestandssysteem te laden en op het scherm te renderen op de gespecificeerde positie.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_picture_aadca6526296c83f527fc808f5070378c}\label{class_picture_aadca6526296c83f527fc808f5070378c}} 
+\index{Picture@{Picture}!draw@{draw}}
+\index{draw@{draw}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Picture\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+De functie {\ttfamily draw} laadt een afbeelding uit een bestand, stelt het in als een textuur voor een sprite, positioneert de sprite en tekent deze op een venster met behulp van SFML.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & De {\ttfamily sf\+::\+Render\+Window\& window} parameter is een referentie naar het vensterobject van de SFML-\/bibliotheek. Deze parameter wordt gebruikt in de {\ttfamily draw} functie om het {\ttfamily sprite} object op het venster te renderen.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderWindow.php}{\texttt{ sf\+::\+Render\+Window}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Sprite.php}{\texttt{ sf\+::\+Sprite}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Texture.php}{\texttt{ sf\+::\+Texture}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Texture.php\#a4c6b08a0a6b7b3e8b1e6c2d3d5f7c3b0}{\texttt{ sf\+::\+Texture\+::load\+From\+File}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Sprite.php\#a3729c88d88ac38c193a392e7cd22f0a8}{\texttt{ sf\+::\+Sprite\+::set\+Texture}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Transformable.php\#af1a42209ce2b5d3f07b00f917bcd8015}{\texttt{ sf\+::\+Sprite\+::set\+Position}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderTarget.php\#a12417a3bcc245c41d957b29583556f39}{\texttt{ sf\+::\+Render\+Window\+::draw}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_picture_ac2526e64d8125aebe586be1b2e6248a6}\label{class_picture_ac2526e64d8125aebe586be1b2e6248a6}} 
+\index{Picture@{Picture}!getBoundingBox@{getBoundingBox}}
+\index{getBoundingBox@{getBoundingBox}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getBoundingBox()}{getBoundingBox()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Picture\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+De functie {\ttfamily get\+Bounding\+Box} retourneert een {\ttfamily sf\+::\+Float\+Rect} die de omlijning van een {\ttfamily \mbox{\hyperlink{class_picture}{Picture}}} object voorstelt op basis van de positie en de afmetingen van de sprite.
+
+\begin{DoxyReturn}{Returns}
+De functie retourneert een {\ttfamily sf\+::\+Float\+Rect} object dat de omlijning van een {\ttfamily \mbox{\hyperlink{class_picture}{Picture}}} object voorstelt. De omlijning wordt berekend op basis van de positie van de afbeelding en de afmetingen van de sprite textuur rechthoek.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1FloatRect.php}{\texttt{ sf\+::\+Float\+Rect}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Sprite.php\#a3c4fb1c94cf7bcf5e8f4d805b79f8f4e}{\texttt{ sf\+::\+Sprite\+::get\+Texture\+Rect}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Transformable.php\#af1a42209ce2b5d3f07b00f917bcd8015}{\texttt{ sf\+::\+Sprite\+::get\+Position}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Sprite.php\#a5d6e5f8e9af0c1b8f7c6f872db73f61b}{\texttt{ sf\+::\+Sprite\+::get\+Global\+Bounds}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1FloatRect.php\#a4b1e0d1b7f587e41c7d0e4b8f870d6e7}{\texttt{ sf\+::\+Float\+Rect\+::\+Float\+Rect}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_picture_a12ea348f57e27d7f711ec493f0a1bc4c}\label{class_picture_a12ea348f57e27d7f711ec493f0a1bc4c}} 
+\index{Picture@{Picture}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Picture\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+De functie {\ttfamily get\+Position} retourneert de positie van de sprite in een {\ttfamily sf\+::\+Vector2f} formaat.
+
+\begin{DoxyReturn}{Returns}
+De functie retourneert een {\ttfamily sf\+::\+Vector2f} object dat de positie van de sprite voorstelt.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Transformable.php\#aea8b18e91a7bf7be589851bb9dd11241}{\texttt{ sf\+::\+Sprite\+::get\+Position}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_picture_ae47abec45e367ba35c5252929afd5440}\label{class_picture_ae47abec45e367ba35c5252929afd5440}} 
+\index{Picture@{Picture}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily void Picture\+::update\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{new\+\_\+pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+De functie {\ttfamily update\+Position} werkt de positie van de sprite bij op basis van een nieuwe positie invoer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+pos} & De {\ttfamily new\+\_\+pos} parameter is een {\ttfamily sf\+::\+Vector2f} object dat de nieuwe positie van de sprite voorstelt.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+image.\+hpp\item 
+image.\+cpp\end{DoxyCompactItemize}

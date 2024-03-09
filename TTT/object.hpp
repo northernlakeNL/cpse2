@@ -12,7 +12,6 @@ public:
         {}
 
     virtual void draw(sf::RenderWindow &window);
-    virtual sf::FloatRect getBoundingBox() const = 0;
 };
 
 #endif
