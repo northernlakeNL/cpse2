@@ -24,6 +24,8 @@ sf::Vector2f ball::collision(std::vector<Object*> rectangles, sf::Vector2f speed
         if (circle.getGlobalBounds().intersects(rect->getBoundingBox())){
             sf::FloatRect ballBounds = circle.getGlobalBounds();
             sf::FloatRect rectBounds = rect->getBoundingBox();
+            paddleHit({rectangles.begin(), rectangles.end()-4});
+            
             if (ballBounds.left < rectBounds.left && speed.x >0){
                 speed.x = -speed.x;
             }
@@ -50,11 +52,19 @@ sf::Vector2f ball::collision(std::vector<Object*> rectangles, sf::Vector2f speed
     return speed;
 }
 
-bool ball::score(Object *rect){
-    if (circle.getGlobalBounds().intersects(rect->getBoundingBox())){
-        return true;
+void ball::paddleHit(std::vector<Object*> rectangles){
+    for (auto& rect : rectangles){
+        if (circle.getGlobalBounds().intersects(rect->getBoundingBox())){
+            sf::Color clr = colors[clr_choice];
+            rect->setColor(clr);
+            if (clr_choice == 2){
+                clr_choice = 0;
+            }
+            else{
+                clr_choice++;
+            }
+        }
     }
-    return false;
 }
 
 sf::FloatRect ball::getBoundingBox() const{ 

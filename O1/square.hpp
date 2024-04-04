@@ -3,7 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Object.hpp"
-
+#include <iostream>
 
 class square :public Object {
 private:
@@ -19,6 +19,8 @@ public:
     void move(sf::Vector2f delta) override;
 
     sf::FloatRect getBoundingBox() const override;
+
+    void setColor(sf::Color clr) override;
 
 };
 

@@ -11,20 +11,18 @@ struct square_action{
 };
 
 const square_action square_actions_P1 [] = {
-    { sf::Keyboard::Up, 0, -1},
-    { sf::Keyboard::Down, 0, 1}
+    { sf::Keyboard::Up, 0, -2},
+    { sf::Keyboard::Down, 0, 2}
 };
 
 const square_action square_actions_P2 [] = {
-    { sf::Keyboard::W, 0, -1},
-    { sf::Keyboard::S, 0, 1}
+    { sf::Keyboard::W, 0, -2},
+    { sf::Keyboard::S, 0, 2}
 };
 
 
 int main(){
-    std::cout << "Opdracht 1 starts" << std::endl;
-
-    sf::Vector2f speed = sf::Vector2f(2,2);
+    sf::Vector2f speed = sf::Vector2f(3,3);
     sf::Event event;
     sf::RenderWindow window( sf::VideoMode(720,480), "Opdracht 1");
 

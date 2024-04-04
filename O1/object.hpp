@@ -14,6 +14,7 @@ public:
     virtual void draw(sf::RenderWindow &window);
     virtual void move(sf::Vector2f delta);
     virtual sf::FloatRect getBoundingBox() const = 0;
+    virtual void setColor(sf::Color clr){};
 };
 
 #endif
