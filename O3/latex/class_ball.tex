@@ -1,0 +1,200 @@
+\hypertarget{class_ball}{}\doxysection{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+De klasse {\ttfamily ball} is verantwoordelijk voor het maken van een cirkelvormig object.  
+
+
+
+
+{\ttfamily \#include $<$ball.\+hpp$>$}
+
+Inheritance diagram for Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ball}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_abcb638a82cb4c22fc8dddfe48f8c6d72}{Ball}} (sf\+::\+Vector2f pos, float size, sf\+::\+Color color)
+\item 
+void \mbox{\hyperlink{class_ball_aa6abdebbe14204b0addd002d8956d9fc}{draw}} (sf\+::\+Render\+Window \&window) override
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_ball_ad315aa3d64a1dd6e260a72ded2a50f18}{get\+Bounding\+Box}} () override
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_ball_a73bcdb38cdabdb0f154f5151e1620d9c}{get\+Position}} () override
+\item 
+void \mbox{\hyperlink{class_ball_afe8fadc7f54da13e9a6a25b487e9df62}{update\+Position}} (sf\+::\+Vector2f new\+\_\+pos) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}\label{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}} 
+{\bfseries Object} (sf\+::\+Vector2f position)
+\item 
+virtual void \mbox{\hyperlink{class_object_a944ca63a566c02245cfa0b6960842f7f}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+virtual sf\+::\+Vector2f \mbox{\hyperlink{class_object_a79ee1fe554cc805e029db3bca6221394}{get\+Position}} ()
+\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{class_object_a0326f620c3053e6536d5968255234d04}{get\+Bounding\+Box}} ()
+\item 
+virtual void \mbox{\hyperlink{class_object_a2d7ad3999d59757000f4d2f741cb9889}{update\+Position}} (sf\+::\+Vector2f new\+\_\+pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ball_ae3fcaf08322bc3bc1c3c729dbcb73340}\label{class_ball_ae3fcaf08322bc3bc1c3c729dbcb73340}} 
+sf\+::\+Circle\+Shape {\bfseries circle}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_acaeaf024e444c21a4f2e273a49829e8b}\label{class_object_acaeaf024e444c21a4f2e273a49829e8b}} 
+sf\+::\+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+De klasse {\ttfamily ball} is verantwoordelijk voor het maken van een cirkelvormig object. 
+
+Deze klasse is een subklasse van de klasse {\ttfamily \mbox{\hyperlink{class_object}{Object}}}. De klasse heeft een cirkelvormig object met een bepaalde grootte en kleur. Het heeft een constructor die een positie, grootte en kleur van de cirkel als invoer neemt. Ook heeft het een functie om de cirkel te tekenen op een venster, een functie om de omtrek van de cirkel te krijgen, een functie om de positie van de cirkel te krijgen, en een functie om de positie van de cirkel bij te werken.
+
+\begin{DoxyNote}{Note}
+De positie is de positie van de linkerbovenhoek van de cirkel.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+ball\+::ball 
+
+ball\+::draw 
+
+ball\+::get\+Bounding\+Box 
+
+ball\+::get\+Position 
+
+ball\+::update\+Position 
+
+\mbox{\hyperlink{class_object}{Object}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_abcb638a82cb4c22fc8dddfe48f8c6d72}\label{class_ball_abcb638a82cb4c22fc8dddfe48f8c6d72}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{float}]{size,  }\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+De functie {\ttfamily \mbox{\hyperlink{class_ball_abcb638a82cb4c22fc8dddfe48f8c6d72}{Ball\+::\+Ball}}} initialiseert een {\ttfamily \mbox{\hyperlink{class_ball}{Ball}}} object met een gespecificeerde positie, grootte en kleur.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & De parameter {\ttfamily pos} is van het type {\ttfamily sf\+::\+Vector2f} en stelt de positie van de bal voor in 2D-\/ruimte. Het bevat de x-\/ en y-\/coördinaten van de positie van de bal. \\
+\hline
+{\em size} & De parameter {\ttfamily size} in de {\ttfamily \mbox{\hyperlink{class_ball}{Ball}}} constructor stelt de diameter van het bal object voor. Het bepaalt hoe groot het bal object zal verschijnen op het scherm. \\
+\hline
+{\em color} & De parameter {\ttfamily color} is van het type {\ttfamily sf\+::\+Color}, wat een klasse is die wordt geleverd door de SFML-\/bibliotheek voor het voorstellen van kleuren. Het wordt gebruikt om de kleur van het bal object dat wordt gemaakt te specificeren.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Color.php}{\texttt{ sf\+::\+Color}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_aa6abdebbe14204b0addd002d8956d9fc}\label{class_ball_aa6abdebbe14204b0addd002d8956d9fc}} 
+\index{Ball@{Ball}!draw@{draw}}
+\index{draw@{draw}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Ball\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+De functie {\ttfamily draw} in C++ tekent een cirkel die een bal voorstelt op een gegeven {\ttfamily sf\+::\+Render\+Window} venster.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & De {\ttfamily sf\+::\+Render\+Window\& window} parameter is een referentie naar het vensterobject waar de bal zal worden getekend. Deze parameter maakt het mogelijk voor de {\ttfamily draw} functie om de bal te renderen op het gespecificeerde venster.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1CircleShape.php\#a21cdf85fc2f201e10222a241af864be0}{\texttt{ sf\+::circle\+Shape\+::set\+Radius}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Transformable.php\#a4dbfb1a7c80688b0b4c477d706550208}{\texttt{ sf\+::circle\+Shape\+::set\+Position}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Shape.php\#a3506f9b5d916fec14d583d16f23c2485}{\texttt{ sf\+::circle\+Shape\+::set\+Fill\+Color}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderTarget.php\#a12417a3bcc245c41d957b29583556f39}{\texttt{ sf\+::\+Render\+Window\+::draw}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_ball_ad315aa3d64a1dd6e260a72ded2a50f18}\label{class_ball_ad315aa3d64a1dd6e260a72ded2a50f18}} 
+\index{Ball@{Ball}!getBoundingBox@{getBoundingBox}}
+\index{getBoundingBox@{getBoundingBox}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getBoundingBox()}{getBoundingBox()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Ball\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+De functie {\ttfamily get\+Bounding\+Box} in C++ retourneert de globale begrenzende rechthoek van een cirkelobject.
+
+\begin{DoxyReturn}{Returns}
+een {\ttfamily sf\+::\+Float\+Rect} object dat de begrenzende rechthoek van de cirkelvormige vorm voorstelt.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1FloatRect.php}{\texttt{ sf\+::\+Float\+Rect}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Shape.php\#ac0e29425d908d5442060cc44790fe4da}{\texttt{ sf\+::circle\+Shape\+::get\+Global\+Bounds}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_ball_a73bcdb38cdabdb0f154f5151e1620d9c}\label{class_ball_a73bcdb38cdabdb0f154f5151e1620d9c}} 
+\index{Ball@{Ball}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Ball\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+De functie {\ttfamily get\+Position} in C++ retourneert de positie van een bal object als een {\ttfamily sf\+::\+Vector2f}.
+
+\begin{DoxyReturn}{Returns}
+Een {\ttfamily sf\+::\+Vector2f} die de positie van de bal voorstelt, die wordt verkregen uit de positie van de cirkel.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Transformable.php\#af1a42209ce2b5d3f07b00f917bcd8015}{\texttt{ sf\+::circle\+Shape\+::get\+Position}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_ball_afe8fadc7f54da13e9a6a25b487e9df62}\label{class_ball_afe8fadc7f54da13e9a6a25b487e9df62}} 
+\index{Ball@{Ball}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily void Ball\+::update\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{new\+\_\+pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+De functie {\ttfamily update\+Position} in C++ werkt de positie van een bal object bij op basis van een nieuwe positie invoer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+pos} & De {\ttfamily new\+\_\+pos} parameter is een {\ttfamily sf\+::\+Vector2f} object dat de nieuwe positie van de bal voorstelt.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ball.\+hpp\item 
+ball.\+cpp\end{DoxyCompactItemize}

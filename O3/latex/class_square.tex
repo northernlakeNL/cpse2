@@ -1,0 +1,188 @@
+\hypertarget{class_square}{}\doxysection{Square Class Reference}
+\label{class_square}\index{Square@{Square}}
+Inheritance diagram for Square\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_square}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_square_aa8016e3ba6d7327a70d2050972d0c312}{Square}} (sf\+::\+Vector2f pos, sf\+::\+Vector2f size, sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em De functie {\ttfamily \mbox{\hyperlink{class_square_aa8016e3ba6d7327a70d2050972d0c312}{Square\+::\+Square}}} initialiseert een vierkant object met een gespecificeerde positie, grootte en kleur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_square_a4174b68fc1aff8f399a1a7116d0e23cd}{draw}} (sf\+::\+Render\+Window \&window) override
+\begin{DoxyCompactList}\small\item\em De functie {\ttfamily draw} gebruikt de SFML bibliotheek om een vierkant op een venster te tekenen. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_square_a96ef716122f3246795822743130b5d22}{get\+Bounding\+Box}} () override
+\begin{DoxyCompactList}\small\item\em De functie {\ttfamily get\+Bounding\+Box} retourneert de globale omtrek van een vierkant object. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_square_a78c9b81a4f50aeae9471c5e3697dd375}{get\+Position}} () override
+\begin{DoxyCompactList}\small\item\em De functie {\ttfamily get\+Position} retourneert de positie van een vierkant object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_square_a860d53ceecba0deb1e0dc2805d14d511}{update\+Position}} (sf\+::\+Vector2f new\+\_\+pos) override
+\begin{DoxyCompactList}\small\item\em De functie {\ttfamily update\+Position} werkt de positie van een vierkant object bij. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}\label{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}} 
+{\bfseries Object} (sf\+::\+Vector2f position)
+\item 
+virtual void \mbox{\hyperlink{class_object_a944ca63a566c02245cfa0b6960842f7f}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+virtual sf\+::\+Vector2f \mbox{\hyperlink{class_object_a79ee1fe554cc805e029db3bca6221394}{get\+Position}} ()
+\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{class_object_a0326f620c3053e6536d5968255234d04}{get\+Bounding\+Box}} ()
+\item 
+virtual void \mbox{\hyperlink{class_object_a2d7ad3999d59757000f4d2f741cb9889}{update\+Position}} (sf\+::\+Vector2f new\+\_\+pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_square_a0517b2fb75a93dac0b44733cec415d8a}\label{class_square_a0517b2fb75a93dac0b44733cec415d8a}} 
+sf\+::\+Rectangle\+Shape {\bfseries rect}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_acaeaf024e444c21a4f2e273a49829e8b}\label{class_object_acaeaf024e444c21a4f2e273a49829e8b}} 
+sf\+::\+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_square_aa8016e3ba6d7327a70d2050972d0c312}\label{class_square_aa8016e3ba6d7327a70d2050972d0c312}} 
+\index{Square@{Square}!Square@{Square}}
+\index{Square@{Square}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{Square()}{Square()}}
+{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+De functie {\ttfamily \mbox{\hyperlink{class_square_aa8016e3ba6d7327a70d2050972d0c312}{Square\+::\+Square}}} initialiseert een vierkant object met een gespecificeerde positie, grootte en kleur. 
+
+De {\ttfamily \mbox{\hyperlink{class_square}{Square}}} constructor initialiseert een vierkant object met een gespecificeerde positie, grootte en kleur. Het heeft een parameter {\ttfamily pos} van het type {\ttfamily sf\+::\+Vector2f} die de positie van het vierkant voorstelt, een parameter {\ttfamily size} van het type {\ttfamily sf\+::\+Vector2f} die de afmetingen van het vierkant voorstelt, en een parameter {\ttfamily color} van het type {\ttfamily sf\+::\+Color} die de kleur van het vierkant voorstelt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & De parameter {\ttfamily pos} is een {\ttfamily sf\+::\+Vector2f} die de positie van het vierkant voorstelt. \\
+\hline
+{\em size} & De parameter {\ttfamily size} in de constructor van {\ttfamily \mbox{\hyperlink{class_square}{Square}}} stelt de afmetingen van het vierkant object dat wordt gemaakt voor. Het is van het type {\ttfamily sf\+::\+Vector2f}, dat een 2D vector klasse is die wordt geleverd door de SFML bibliotheek. Deze vector bevat de breedte en hoogte van het vierkant. \\
+\hline
+{\em color} & De parameter {\ttfamily color} is van het type {\ttfamily sf\+::\+Color}, dat een klasse is die wordt geleverd door de SFML bibliotheek voor het voorstellen van kleuren. Het wordt gebruikt om de kleur van het vierkant object dat wordt gemaakt te specificeren.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Color.php}{\texttt{ sf\+::\+Color}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_square_a4174b68fc1aff8f399a1a7116d0e23cd}\label{class_square_a4174b68fc1aff8f399a1a7116d0e23cd}} 
+\index{Square@{Square}!draw@{draw}}
+\index{draw@{draw}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Square\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+De functie {\ttfamily draw} gebruikt de SFML bibliotheek om een vierkant op een venster te tekenen. 
+
+De {\ttfamily draw} functie gebruikt de SFML bibliotheek om een vierkant op een venster te tekenen. Het maakt gebruik van de {\ttfamily sf\+::\+Render\+Window} parameter om het vierkant op het gespecificeerde venster te tekenen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & De {\ttfamily sf\+::\+Render\+Window\& window} parameter in de {\ttfamily draw} functie is een referentie naar een SFML venster object. Deze parameter wordt gebruikt om het vierkant object op het gespecificeerde SFML venster te tekenen.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderWindow.php}{\texttt{ sf\+::\+Render\+Window}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Transformable.php\#af1a42209ce2b5d3f07b00f917bcd8015}{\texttt{ sf\+::\+Rectangle\+Shape\+::set\+Position}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Shape.php\#aa5da23e522d2dd11e3e7661c26164c78}{\texttt{ sf\+::\+Rectangle\+Shape\+::set\+Fill\+Color}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderTarget.php\#a12417a3bcc245c41d957b29583556f39}{\texttt{ sf\+::\+Render\+Window\+::draw}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_square_a96ef716122f3246795822743130b5d22}\label{class_square_a96ef716122f3246795822743130b5d22}} 
+\index{Square@{Square}!getBoundingBox@{getBoundingBox}}
+\index{getBoundingBox@{getBoundingBox}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{getBoundingBox()}{getBoundingBox()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Square\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+De functie {\ttfamily get\+Bounding\+Box} retourneert de globale omtrek van een vierkant object. 
+
+De {\ttfamily get\+Bounding\+Box} functie retourneert de globale omtrek van een vierkant object. Het retourneert een {\ttfamily sf\+::\+Float\+Rect} object dat de omtrek van het vierkant object voorstelt.
+
+\begin{DoxyReturn}{Returns}
+Een {\ttfamily sf\+::\+Float\+Rect} object dat de omtrek van het vierkant object voorstelt, wordt geretourneerd.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1FloatRect.php}{\texttt{ sf\+::\+Float\+Rect}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Shape.php\#ac0e29425d908d5442060cc44790fe4da}{\texttt{ sf\+::\+Rectangle\+Shape\+::get\+Global\+Bounds}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_square_a78c9b81a4f50aeae9471c5e3697dd375}\label{class_square_a78c9b81a4f50aeae9471c5e3697dd375}} 
+\index{Square@{Square}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Square\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+De functie {\ttfamily get\+Position} retourneert de positie van een vierkant object. 
+
+De {\ttfamily get\+Position} functie retourneert de positie van een vierkant object. Het retourneert een {\ttfamily sf\+::\+Vector2f} object dat de positie van het vierkant voorstelt.
+
+\begin{DoxyReturn}{Returns}
+Een {\ttfamily sf\+::\+Vector2f} object dat de positie van het vierkant object voorstelt, wordt geretourneerd.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Transformable.php\#aea8b18e91a7bf7be589851bb9dd11241}{\texttt{ sf\+::\+Rectangle\+Shape\+::get\+Position}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_square_a860d53ceecba0deb1e0dc2805d14d511}\label{class_square_a860d53ceecba0deb1e0dc2805d14d511}} 
+\index{Square@{Square}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily void Square\+::update\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{new\+\_\+pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+De functie {\ttfamily update\+Position} werkt de positie van een vierkant object bij. 
+
+De {\ttfamily update\+Position} functie werkt de positie van een vierkant object bij op basis van een nieuwe positie invoer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+pos} & De {\ttfamily new\+\_\+pos} parameter is een {\ttfamily sf\+::\+Vector2f} die de nieuwe positie van het vierkant object voorstelt.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+square.\+hpp\item 
+square.\+cpp\end{DoxyCompactItemize}

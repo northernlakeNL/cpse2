@@ -1,0 +1,210 @@
+\hypertarget{class_line}{}\doxysection{Line Class Reference}
+\label{class_line}\index{Line@{Line}}
+
+
+De klasse {\ttfamily \mbox{\hyperlink{class_line}{Line}}} is verantwoordelijk voor het maken van een lijn object.  
+
+
+
+
+{\ttfamily \#include $<$line.\+hpp$>$}
+
+Inheritance diagram for Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_line}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_line_ab95d9da2a7baf0216b06f80ab2639ae2}{Line}} (sf\+::\+Vector2f position, sf\+::\+Vector2f end, sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em De line constructor initialiseert een \mbox{\hyperlink{class_line}{Line}} object met een gespecificeerde positie, eindpunt, kleur en vertex array voor tekenen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_ad50fff453a6b534fe39b5b48178dfc27}{draw}} (sf\+::\+Render\+Window \&window) override
+\begin{DoxyCompactList}\small\item\em De functie {\ttfamily draw} tekent een lijn tussen twee punten op een {\ttfamily sf\+::\+Render\+Window} met behulp van {\ttfamily sf\+::\+Vertex} en {\ttfamily sf\+::\+Lines}. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_line_ac05c178cbc84457aa4889d908d8b8270}{get\+Bounding\+Box}} () override
+\begin{DoxyCompactList}\small\item\em de functie {\ttfamily get\+Bounding\+Box} retourneert de begrenzende doos van een lijn in een C++ programma met behulp van de SFML bibliotheek. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_line_afa43e9c6d18041d879ad61f715d8ed0d}{get\+Position}} () override
+\begin{DoxyCompactList}\small\item\em De functie {\ttfamily get\+Position} retourneert de positie van een lijn als een 2D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_a211df3ba170785e6e057f4484d222dee}{update\+Position}} (sf\+::\+Vector2f new\+\_\+pos) override
+\begin{DoxyCompactList}\small\item\em de functie {\ttfamily update\+Position} werkt de positie van een lijn object bij en past het eindpunt dienovereenkomstig aan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}\label{class_object_ace11a74a17dd88dd92bdd6cc28b573b7}} 
+{\bfseries Object} (sf\+::\+Vector2f position)
+\item 
+virtual void \mbox{\hyperlink{class_object_a944ca63a566c02245cfa0b6960842f7f}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+virtual sf\+::\+Vector2f \mbox{\hyperlink{class_object_a79ee1fe554cc805e029db3bca6221394}{get\+Position}} ()
+\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{class_object_a0326f620c3053e6536d5968255234d04}{get\+Bounding\+Box}} ()
+\item 
+virtual void \mbox{\hyperlink{class_object_a2d7ad3999d59757000f4d2f741cb9889}{update\+Position}} (sf\+::\+Vector2f new\+\_\+pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_acaeaf024e444c21a4f2e273a49829e8b}\label{class_object_acaeaf024e444c21a4f2e273a49829e8b}} 
+sf\+::\+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+De klasse {\ttfamily \mbox{\hyperlink{class_line}{Line}}} is verantwoordelijk voor het maken van een lijn object. 
+
+De klasse {\ttfamily \mbox{\hyperlink{class_line}{Line}}} is een subklasse van de klasse {\ttfamily \mbox{\hyperlink{class_object}{Object}}}. De klasse {\ttfamily \mbox{\hyperlink{class_line}{Line}}} heeft een lijn object met een begin-\/ en eindpunt en een bepaalde kleur. Het heeft een constructor die een positie, eindpunt en kleur van de lijn als invoer neemt. Ook heeft het een functie om de lijn te tekenen op een venster, een functie om de omtrek van de lijn te krijgen, een functie om de positie van de lijn te krijgen, en een functie om de positie van de lijn bij te werken.
+
+\begin{DoxyNote}{Note}
+De positie is de positie van de linkerbovenhoek van de lijn.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_line_ab95d9da2a7baf0216b06f80ab2639ae2}{Line\+::\+Line}} 
+
+\mbox{\hyperlink{class_line_ad50fff453a6b534fe39b5b48178dfc27}{Line\+::draw}} 
+
+\mbox{\hyperlink{class_line_ac05c178cbc84457aa4889d908d8b8270}{Line\+::get\+Bounding\+Box}} 
+
+\mbox{\hyperlink{class_line_afa43e9c6d18041d879ad61f715d8ed0d}{Line\+::get\+Position}} 
+
+\mbox{\hyperlink{class_line_a211df3ba170785e6e057f4484d222dee}{Line\+::update\+Position}} 
+
+\mbox{\hyperlink{class_object}{Object}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_line_ab95d9da2a7baf0216b06f80ab2639ae2}\label{class_line_ab95d9da2a7baf0216b06f80ab2639ae2}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{Line()}{Line()}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{end,  }\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+De line constructor initialiseert een \mbox{\hyperlink{class_line}{Line}} object met een gespecificeerde positie, eindpunt, kleur en vertex array voor tekenen. 
+
+De {\ttfamily \mbox{\hyperlink{class_line}{Line}}} constructor initialiseert een lijn object met een gespecificeerde positie, eindpunt, kleur en vertex array voor tekenen. De constructor neemt een positie, eindpunt en kleur van de lijn als invoer. Het initialiseert ook een vertex array voor het tekenen van de lijn.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & de {\ttfamily position} parameter stelt het startpunt van de lijn voor. Het is een {\ttfamily sf\+::\+Vector2f} object dat de x-\/ en y-\/coördinaten van het startpunt van de lijn bevat.\\
+\hline
+{\em end} & De {\ttfamily end} parameter in de {\ttfamily \mbox{\hyperlink{class_line}{Line}}} constructor stelt het eindpunt van het lijnsegment voor dat zal worden getekend. Het is van het type {\ttfamily sf\+::\+Vector2f}, wat een 2D vector klasse is die wordt geleverd door de SFML-\/bibliotheek voor het hanteren van 2D-\/coördinaten.\\
+\hline
+{\em color} & De {\ttfamily color} parameter in de {\ttfamily \mbox{\hyperlink{class_line}{Line}}} constructor is van het type {\ttfamily sf\+::\+Color}, wat een klasse is die wordt geleverd door de SFML-\/bibliotheek voor het voorstellen van kleuren. Het wordt gebruikt om de kleur van de lijn die zal worden getekend te specificeren.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Color.php}{\texttt{ sf\+::\+Color}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vertex.php}{\texttt{ sf\+::\+Vertex}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/group__graphics.php\#gga5ee56ac1339984909610713096283b1ba2bf015eeff9f798dfc3d6d744d669f1e}{\texttt{ sf\+::\+Lines}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_line_ad50fff453a6b534fe39b5b48178dfc27}\label{class_line_ad50fff453a6b534fe39b5b48178dfc27}} 
+\index{Line@{Line}!draw@{draw}}
+\index{draw@{draw}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Line\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+De functie {\ttfamily draw} tekent een lijn tussen twee punten op een {\ttfamily sf\+::\+Render\+Window} met behulp van {\ttfamily sf\+::\+Vertex} en {\ttfamily sf\+::\+Lines}. 
+
+De {\ttfamily draw} functie tekent een lijn tussen twee punten op een {\ttfamily sf\+::\+Render\+Window} met behulp van {\ttfamily sf\+::\+Vertex} en {\ttfamily sf\+::\+Lines}. Het maakt gebruik van de {\ttfamily sf\+::\+Render\+Window} parameter om de lijn op het gespecificeerde venster te tekenen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & de {\ttfamily sf\+::\+Render\+Window\& window} parameter in de {\ttfamily draw} functie is een referentie naar een SFML vensterobject. Deze parameter wordt gebruikt om de lijn op het gespecificeerde venster te tekenen.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vertex.php}{\texttt{ sf\+::\+Vertex}} 
+
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1RenderTarget.php\#a12417a3bcc245c41d957b29583556f39}{\texttt{ sf\+::\+Render\+Window\+::draw}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_line_ac05c178cbc84457aa4889d908d8b8270}\label{class_line_ac05c178cbc84457aa4889d908d8b8270}} 
+\index{Line@{Line}!getBoundingBox@{getBoundingBox}}
+\index{getBoundingBox@{getBoundingBox}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{getBoundingBox()}{getBoundingBox()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Line\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+de functie {\ttfamily get\+Bounding\+Box} retourneert de begrenzende doos van een lijn in een C++ programma met behulp van de SFML bibliotheek. 
+
+De {\ttfamily get\+Bounding\+Box} functie retourneert de begrenzende doos van een lijn in met behulp van de SFML bibliotheek.\textbackslash{} Het retourneert een {\ttfamily sf\+::\+Float\+Rect} object dat de begrenzende doos van het {\ttfamily \mbox{\hyperlink{class_line}{Line}}} object voorstelt.
+
+\begin{DoxyReturn}{Returns}
+Een {\ttfamily sf\+::\+Float\+Rect} object dat de begrenzende doos van het {\ttfamily \mbox{\hyperlink{class_line}{Line}}} object voorstelt.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1FloatRect.php}{\texttt{ sf\+::\+Float\+Rect}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_line_afa43e9c6d18041d879ad61f715d8ed0d}\label{class_line_afa43e9c6d18041d879ad61f715d8ed0d}} 
+\index{Line@{Line}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Line\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+De functie {\ttfamily get\+Position} retourneert de positie van een lijn als een 2D vector. 
+
+De {\ttfamily get\+Position} functie retourneert de positie van een lijn als een 2D vector. Het retourneert de positie van de linkerbovenhoek van de lijn.
+
+\begin{DoxyReturn}{Returns}
+Een {\ttfamily sf\+::\+Vector2f} object dat de positie van de lijn voorstelt.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+\mbox{\Hypertarget{class_line_a211df3ba170785e6e057f4484d222dee}\label{class_line_a211df3ba170785e6e057f4484d222dee}} 
+\index{Line@{Line}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily void Line\+::update\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{new\+\_\+pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+de functie {\ttfamily update\+Position} werkt de positie van een lijn object bij en past het eindpunt dienovereenkomstig aan. 
+
+De {\ttfamily update\+Position} functie werkt de positie van een lijn object bij en past het eindpunt dienovereenkomstig aan. Het neemt een nieuwe positie als invoer en werkt de positie van de lijn bij. Het past ook het eindpunt van de lijn aan op basis van de nieuwe positie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+pos} & De {\ttfamily new\+\_\+pos} parameter is een {\ttfamily sf\+::\+Vector2f} die de nieuwe positie voorstelt waar de lijn naartoe zal worden bijgewerkt.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.sfml-dev.org/documentation/2.6.1-fr/classsf_1_1Vector2.php}{\texttt{ sf\+::\+Vector2f}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_object}{Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+line.\+hpp\item 
+line.\+cpp\end{DoxyCompactItemize}

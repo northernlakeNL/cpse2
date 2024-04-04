@@ -1,0 +1,25 @@
+\hypertarget{image_8hpp_source}{}\doxysection{image.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}object.hpp"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_picture}{Picture}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object}{Object}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ path;}
+\DoxyCodeLine{00025\ \ \ \ \ sf::Texture\ image;}
+\DoxyCodeLine{00026\ \ \ \ \ sf::Sprite\ sprite;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_picture}{Picture}}(sf::Vector2f\ pos,\ std::string\ path);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_picture_aadca6526296c83f527fc808f5070378c}{draw}}(sf::RenderWindow\&\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ sf::FloatRect\ \mbox{\hyperlink{class_picture_ac2526e64d8125aebe586be1b2e6248a6}{getBoundingBox}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_picture_a12ea348f57e27d7f711ec493f0a1bc4c}{getPosition}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_picture_ae47abec45e367ba35c5252929afd5440}{updatePosition}}(sf::Vector2f\ new\_pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,6 @@
+(147,40) RECTANGLE blue (150,100)
+(294,186) CIRCLE red 30
+(886,25) LINE yellow (150,500)
+(580,176) PICTURE hu.png 
+(329,21) CIRCLE green 70
+(9,262) RECTaNGLE white (450,500)
