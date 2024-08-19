@@ -30,4 +30,3 @@ Dit is een project voor CPSE2, gemaakt door Tom Noordermeer. Het project is bedo
     4. Houd de Linker muisknop ingedrukt om een beweeg de muis om een figuur te verplaatsen.
     5. Laat de linker muisknop weer los om het figuur op de nieuwe positie te plaatsen.
     6. Zodra het programma wordt afgesloten, wordt de informatie over de figuren opgeslagen in een bestand genaamd "shape_info.txt".
-    
